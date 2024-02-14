@@ -375,7 +375,10 @@ li {
     padding: 9rem 1rem;
     text-align: center;
   }
-
+  .hero__title {
+      padding-bottom: 35% ;
+      font-size: 2rem;
+  }
   .about__title {
     font-size: 3rem;
   }
@@ -391,10 +394,10 @@ li {
     justify-content: center;
   }
   .about__link--color-yellow{
-    margin-left: 90px;
+    margin: 35% 35%
   }
   .about__link--color-pink{
-        margin-left: 90px;
+        margin: 35% 35%;
   }
   .expertise__description {
     padding: var(--description-padding);
@@ -431,8 +434,7 @@ li {
       width: 20%;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin-right: 40%;
+      justify-content: center;
     }
      }
 @media screen and (min-width: 1025px) {

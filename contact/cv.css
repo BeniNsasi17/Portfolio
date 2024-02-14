@@ -3,7 +3,7 @@ body{
     padding: 1rem 150px 0px 150px;
     min-height: 100vh;
     min-width: 100vh;
-    background: #dedcdc;
+    background: #e7e7e7;
 }
 html{
     scroll-behavior: smooth;
@@ -80,16 +80,17 @@ form{
     gap: 10px;
     align-items: end;
 }
+/*----------------------footer-------------------*/
 footer{
     flex-shrink: 0;
     border-top: 1px solid #000;
     width: 100%;
-    margin-top: 250px;
+    margin-top: 200px;
 }
-/*----------------------footer-------------------*/
 .image{
-    width: 20px;
-    height: 15px;
+    width: 23px;
+    height: 20px;
+    border-radius: 20%;
 }
 .footer-contact{
     width: 1200px;
@@ -97,10 +98,10 @@ footer{
     display: flex;
     justify-content: center;
     align-items: start;
-    font-size: 20px;
+    font-size: 15px;
     padding: 50px 0 100px;
     justify-content: space-between;
-     }
+    }
 .footer-contact ul{
     list-style: none;
 }

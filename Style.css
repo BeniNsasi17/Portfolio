@@ -1,8 +1,9 @@
 /*----------------------Head----------------*/
+
 body{
    padding: 1rem 150px 0px 150px;
    min-height: 100vh;
-   background: #dedcdc;
+   background: #e7e7e7;
 }
 html{
    scroll-behavior: smooth;
@@ -14,6 +15,7 @@ html{
    color: solid blueviolet
 }
 /*-----------------Header------------*/
+
 .navbar{
    display:flex;
    justify-content: space-between;
@@ -27,10 +29,10 @@ a{
    align-items: center;
 }
 /*-------------------Main----------------*/
+
 main{
    min-width: 500px;
    width: 90%;
-   margin: 0 auto;
 }
 .flexbox li{
      list-style: none;
@@ -48,55 +50,57 @@ img{
    border-radius: 200px;
    object-fit: cover;
 }
-#circle1{
+.button1{
    height: 100px;
    width: 100px;
    background: rgb(214, 197, 3);
    position:absolute;
    border-radius: 150px;
-   left: 50%;
-   bottom: 43%;
+   left: 53%;
+   bottom: 52%;
    text-align: center;
    display: flex;
    justify-content: center;
    align-items: center;
 }
-#circle2{
+.button2{
    height: 100px;
    width: 100px;
    background:red;
    position: absolute;
    border-radius: 150px;
    left: 60%;
-   bottom: 43%;
+   bottom: 52%;
    text-align: center;
    display: flex;
    justify-content: center;
    align-items: center;
 }
-#circle3{
+.button3{
    height: 100px;
    width: 100px;
    background: turquoise;
    position: absolute;
    border-radius: 150px;
-   left: 70%;
-   bottom: 43%;
+   left: 67%;
+   bottom: 52%;
    text-align: center;
    display: flex;
    justify-content: center;
    align-items: center;
 }
 /*----------------------footer-------------------*/
+
 .image{
-   width: 20px;
-   height: 15px;
-}
+   width: 23px;
+    height: 20px;
+    border-radius: 20%;
+    }
 footer{
    flex-shrink: 0;
-   border-top: 1px solid #000 ;
+   border-top: 1px solid #000;
    width: 100%;
-   margin-top: 250px ;
+   margin-top: 200px;
 }
 .end{
    width: 1200px;
@@ -104,10 +108,71 @@ footer{
    display: flex;
    justify-content: center;
    align-items: start;
-   font-size: 20px;
+   font-size: 15px;
    padding: 50px 0 100px;
    justify-content: space-between;
 }
 .end ul{
    list-style: none;
 }
+/*---------------------------Media Queries------------------------*/
+
+@media screen and (max-width: 1024px) {
+   main{
+      max-width: 500px;
+      width: 500px;
+   }
+   .navbar{
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      flex-direction: column;
+   }
+   .header{
+      width: 300%
+   }
+   .header__title{
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+   }
+   .header__link{
+      width: 300%;
+   }
+   .nav--link{
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+   }
+   .flexbox{
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      display: flex;
+   }
+   .flexbox__main ul{
+      flex-direction: column;
+   }
+   .flexbox__main{
+
+   }
+   .flexbox__img{
+      height: 300px;
+      width: 300px;
+      border-radius: 200px;
+      object-fit: cover;
+   }
+   .flexbox li{
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin: 0%;
+   }
+   .img{
+      margin: 0;
+   }
+}
+@media screen and (min-width: 1025px) {
+
+}
+   

@@ -3,13 +3,14 @@ body{
     padding: 1rem 150px 0px 150px;
     min-height: 100vh;
     min-width: 100vh;
-    background: #dedcdc;
+    background: #e7e7e7;
 }
 html{
     scroll-behavior: smooth;
 }
 .header{
-    border: 1px
+    margin: 0;
+    padding: 0;
 }
 .header title{
     color: solid blueviolet
@@ -18,6 +19,8 @@ html{
 .navbar{
     display:flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
  }
 .classbar{
     display: flex;
@@ -33,17 +36,21 @@ a{
 }
 /*-------------------Main----------------*/
 main{
-    max-width: max-content;
+    max-width: min-content;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 ;
+    padding: 0;
     height: 90%;
     align-items: center;
     justify-content: center;
 }
+/*-------------------flexbox------------*/
+
 .flex{
-    height: 400px;
     width: 400px;
-    margin: 50px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
 }
 .flex li{
     list-style: none;
@@ -53,37 +60,60 @@ main{
     justify-content: center;
     text-align: center;
     align-items: center;
-}
-.box{
-    margin-top: 10%;
-}
+    min-width: 700px;
+ }
 .box img{
-     height: 200px;
-     width: 300px;
+     height: 160px;
+     width: 260px;
      border-radius: 40px;
 }
-.box h5{
-    text-align: center;
+/*-------------------Dr_norman-----------*/
+
+.Dr_Norman{
+    display: flex;
+    width: 700px;
+    align-items: center;
+ }
+.norman_link{
+    height: 160px;
+     width: 260px;
+     border-radius: 40px;
 }
-.project_title{
-    margin-right: 60%;
+/*--------------------sunnyside---------------*/
+
+.sunnyside{
+    display: flex;
+    width: 700px;
+    align-items: center;
 }
-.project_dr_norman{
-    margin-top: 10%;
+.sunnyside_link{
+    height: 160px;
+     width: 260px;
+     border-radius: 40px;
 }
-.project_responsive{
-    margin-top: 20%;
+/*--------------------portfolio-----------------*/
+
+.portfolio{
+    display: flex;
+    width: 700px;
+    align-items: center;
+}
+.portfolio_link{
+    height: 160px;
+     width: 260px;
+     border-radius: 40px;
 }
 /*----------------------footer-------------------*/
 footer{
     flex-shrink: 0;
     border-top: 1px solid #000;
     width: 100%;
-    margin-top: 250px;
+    margin-top: 0px;
 }
 .image{
-    width: 20px;
-    height: 15px;
+    width: 23px;
+    height: 20px;
+    border-radius: 20%;
 }
 .footer-contact{
     width: 1200px;
@@ -91,10 +121,55 @@ footer{
     display: flex;
     justify-content: center;
     align-items: start;
-    font-size: 20px;
+    font-size: 15px;
     padding: 50px 0 100px;
     justify-content: space-between;
 }
 .footer-contact ul{
     list-style: none;
 }
+/*---------------------------Media Queries------------------------*/
+
+@media screen and (max-width: 1024px) {
+    body{
+        min-width:300px;
+    }
+    .navbar{
+       justify-content: left;
+       text-align: left;
+       align-items: left;
+       flex-direction: column;
+    }
+    .nav--link{
+       justify-content:left ;
+       text-align: left;
+       align-items: left;
+    }
+    h2{
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    .flexbox {
+        min-width: 0;
+     }
+    .title{
+       margin-right: 800px;
+    }
+    .Dr_Norman{
+        flex-direction: column-reverse;
+        padding: 30px 2px;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+    }
+    .norman_link{
+        margin-right: 500px;
+    }
+    .sunnyside{
+        flex-direction: column-reverse;
+    }
+    .portfolio{
+        flex-direction: column-reverse;
+    }
+ }
