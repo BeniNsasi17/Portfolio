@@ -8,13 +8,13 @@ body{
 html{
     scroll-behavior: smooth;
 }
-.header{
-    border: 1px
-}
 .header title{
     color: solid blueviolet
 }
 /*-----------------Header------------*/
+header{
+    padding: 1rem 150px 0px 150px;
+ }
 .classbar{
     display: flex;
     justify-content: space-between;

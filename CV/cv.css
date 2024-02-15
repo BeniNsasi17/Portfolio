@@ -1,6 +1,5 @@
 /*----------------------Head----------------*/
 body{
-    padding: 1rem 150px 0px 150px;
     min-height: 100vh;
     min-width: 100vh;
     background: #e7e7e7;
@@ -9,6 +8,9 @@ html{
     scroll-behavior: smooth;
 }
 /*--------------------header----------------------*/
+header{
+    padding: 1rem 150px 0px 150px;
+ }
 .header__nav{
     display: flex;
     justify-content: space-between;

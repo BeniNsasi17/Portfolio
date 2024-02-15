@@ -1,6 +1,5 @@
 /*----------------------Head----------------*/
 body{
-    padding: 1rem 150px 0px 150px;
     min-height: 100vh;
     min-width: 100vh;
     background: #e7e7e7;
@@ -8,14 +7,14 @@ body{
 html{
     scroll-behavior: smooth;
 }
-.header{
-    margin: 0;
-    padding: 0;
-}
 .header title{
     color: solid blueviolet
 }
 /*-----------------Header------------*/
+
+header{
+    padding: 1rem 150px 0px 150px;
+ }
 .navbar{
     display:flex;
     justify-content: space-between;
