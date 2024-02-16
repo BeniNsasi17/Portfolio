@@ -9,18 +9,38 @@ html{
 }
 /*-----------------Header------------*/
 
-.navbar{
-   display:flex;
+header{
+   display: flex;
    justify-content: space-between;
+   margin-bottom: 7rem;
+}
+.header__title{
+   padding-left: 6rem;
+}
+.header__link{
+   width: 15%;
+}
+.header__nav{
+   display: flex;
+   list-style: none;
+   justify-content: space-evenly;
+   padding: 2px;
+}
+.nav--link{
+   border-right: 2px solid black;
+   padding-right: 2.5rem;
+   text-decoration: none;
+   color: #000;
+}
+.only{
+ border-right: none;
 }
 a{
    text-decoration: none;
-   color: black;
+   color: #000;
 }
-.nav--link{
-   margin-left: 2rem;
-   align-items: center;
-}
+
+
 /*-------------------Main----------------*/
 
 .flexbox li{
@@ -66,8 +86,7 @@ img{
    text-align: center;
    display: flex;
    justify-content: center;
-   align-items: center;
-   right: 
+   align-items: center; 
 }
 .button3{
    height: 100px;
@@ -79,7 +98,6 @@ img{
    display: flex;
    justify-content: center;
    align-items: center;
-   right: ;
 }
 /*----------------------footer-------------------*/
 
@@ -92,7 +110,7 @@ footer{
    flex-shrink: 0;
    border-top: 1px solid #000;
    width: 100%;
-   margin-top: 400px;
+   margin-top: 300px;
 }
 .end{
    width: 1200px;
@@ -114,140 +132,114 @@ footer{
 /*---------------------------Media Queries------------------------*/
 
 @media screen and (max-width: 1024px) {
-   }
    /*-------------------header---------------*/
-   main{
-      max-width: 500px;
-      width: 500px;
-   }
-   .navbar{
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      flex-direction: column;
-   }
-   .header{
-      width: 300%
-   }
-   .header__title{
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-   }
-   .header__link{
-      width: 300%;
-   }
-   .nav--link{
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-   }
-   /*---------------main---------------*/
-   main{
-      justify-content: center;
-      align-items: center;
-   }
-   .flexbox{
-      flex-direction: column;
-      align-items: center;
-      height: 400px;
-      width: 300px;
-      margin: 0px 50px;
-   }
-   .flexbox_img{
-      margin: 0px 0px;
-   }
-   .flexbox_text{
-      width: 280px;
-   }
-   .flexbox_text h1,
-   h3{
-     justify-content: center; 
-     align-items: center;
-     text-align: center;
-   }
-   img{
-      height: 200px;
-      width: 200px;
-      border-radius: 200px;
-      object-fit: cover;
-      margin-top: 20px;
-   }
-   /*------------------button-------------*/
-   .button{
-      display: flex;
-      width: 200px;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-   
-   }
-   .button1{
-      height: 80px;
-      width: 80px;
-      background: rgb(214, 197, 3);
-      position:absolute;
-      border-radius: 150px; 
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-   .button2{
-      height: 80px;
-      width: 80px;
-      background:red;
-      position: absolute;
-      border-radius: 150px;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-   .button3{
-      height: 80px;
-      width: 80px;
-      background: turquoise;
-      position: absolute;
-      border-radius: 150px;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-   /*-------------------footer-----------------*/
-
-   .image{
-   width: 23px;
-    height: 20px;
-    border-radius: 20%;
-    }
-footer{
-   border-top: 2px solid #000;
-   max-width: 200%;
-   width: 377px;
-   margin-top: 250px;
-   display: flex;
-   align-items: center;
+header{
    flex-direction: column;
-   }
-.end{
+   height: 25px;
+}
+.header__link{
+   width: 420px;
+}
+/*---------------main---------------*/
+.flexbox{
+   flex-direction: column;
+   align-items: center;
+   height: 400px;
+   width: 300px;
+   margin: 0px 30px;
+}
+.flexbox_img{
+   margin: 0px 0px;
+}
+.flexbox_text{
+   width: 280px;
+}
+.flexbox_text h1,
+h3{
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+}
+img{
+   height: 200px;
+   width: 200px;
+   border-radius: 200px;
+   object-fit: cover;
+   margin-top: 20px;
+}
+/*------------------button-------------*/
+.button{
    display: flex;
    width: 200px;
-   margin: 0 0;
-   flex-direction: column;
-   justify-content: center;
-   font-size: 17px;
-   align-items: center;
-}
-.end h4{
-   align-items: center;
-   text-align: center;
-}
-.end ul{
-   list-style: none;
-}
-}
-@media screen and (min-width: 1025px) {
+   flex-wrap: nowrap;
+   justify-content: space-between;
 
 }
+.button1{
+   height: 80px;
+   width: 80px;
+   background: rgb(214, 197, 3);
+   position:absolute;
+   border-radius: 150px; 
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.button2{
+   height: 80px;
+   width: 80px;
+   background:red;
+   position: absolute;
+   border-radius: 150px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.button3{
+   height: 80px;
+   width: 80px;
+   background: turquoise;
+   position: absolute;
+   border-radius: 150px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/*-------------------footer-----------------*/
+
+.image{
+width: 23px;
+ height: 20px;
+ border-radius: 20%;
+ }
+footer{
+border-top: 2px solid #000;
+max-width: 200%;
+width: 377px;
+margin-top: 250px;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.end{
+display: flex;
+width: 200px;
+margin: 0 0;
+flex-direction: column;
+justify-content: center;
+font-size: 17px;
+align-items: center;
+}
+.end h4{
+align-items: center;
+text-align: center;
+}
+.end ul{
+list-style: none;
+} 
+}
+
    
